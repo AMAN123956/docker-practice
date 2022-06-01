@@ -1,0 +1,135 @@
+<%- include("partials/header") %>
+
+    <style>
+        .logo {
+            position: relative;
+            top: 20px;
+            left: 60px;
+        }
+
+        .logo img {
+            width: 120px;
+            height: 75px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        /* Left */
+        .left-img {
+            margin-top: 30px;
+            width: 27%;
+        }
+
+        /* Right*/
+        .right-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 40%;
+            align-self: baseline;
+        }
+
+        .top-section {
+            margin-bottom: 30px;
+        }
+
+        .heading1 {
+            font-size: 1.5rem;
+        }
+
+        input {
+            border: 2px solid black !important;
+            border-radius: 0 !important;
+            border-top-right-radius: 6px !important;
+            border-bottom-right-radius: 6px !important;
+        }
+
+        .bottom-section {
+            border: 2px solid rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            padding: 15px 30px;
+        }
+
+        .bottom-section a{
+            color: black;
+        }
+
+        .bottom-section a > button{
+            margin-right: 10px !important;
+        }
+    </style>
+
+    <a href="/" class="logo">
+        <img src="/images/logo.svg" alt="logo" />
+    </a>
+
+    <div class="container">
+        <!-- Left Section -->
+        <img class="left-img" src="images/login_img.svg" alt="login_img">
+        <!--Right Section -->
+        <div class="right-box">
+            <!--Heading Section -->
+            <div class="top-section">
+                <h3 class="heading1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quam.</h3>
+            </div>
+            <!--Login Form -->
+            <div class="bottom-section">
+                <div>
+                    <h2 style="font-size: 1.8rem;">Login</h2>
+                    <h5 style="font-size: 1.5rem;">Hi! Welcome Back</h5>
+
+                    <!-- form for registration starts -->
+                    <form action="/login" class="ui form" style="font-size: 1.2rem;" method="post">
+
+                        <!-- email input field -->
+                        <div class="field">
+                            <label>Admission Number</label>
+
+                            <div class="ui small action input" style="margin-bottom: 10px;">
+                                <button class="ui icon secondary button">
+                                    <i class="user icon"></i>
+                                </button>
+                                <input type="text" placeholder="Your Admission Number" name="username" required>
+                            </div>
+                        </div>
+
+                        <!-- password input field -->
+                        <div class="field">
+                            <label>Password</label>
+                            <div class="ui small action input" style="margin-bottom: 10px;">
+                                <button class="ui icon secondary button">
+                                    <i class="user icon"></i>
+                                </button>
+                                <input type="password" placeholder="Password" name="password" required>
+                            </div>
+                        </div>
+
+                        <!-- submit button -->
+                        <button class="ui secondary fluid submit button" style="margin-bottom: 15px;" type="submit" name="action">
+                            Login
+                        </button>
+
+                        <a href="/forgotpassword">
+                            <button class="ui circular facebook icon button">
+                                <i class="exclaimation icon" style="font-weight: 900;">!</i>
+                            </button>
+                            <strong>
+                                Forgot Password ?
+                            </strong>  
+                        </a>
+
+                    </form>
+
+                    <!-- form ends here -->
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>

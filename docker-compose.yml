@@ -1,0 +1,13 @@
+version: "3"
+services:
+        JSS-SOCIAL-MEDIA:
+            container_name: JSS-SOCIAL-MEDIA
+            image: jsssocialmedia
+            restart: always
+            build: .
+            ports:
+              - "7500:7500"
+            env_file:
+              - ./config/dev.env     # path to your .env file
+
+        

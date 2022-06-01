@@ -1,0 +1,88 @@
+body{
+    /* background: #E5E5E5; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.left-logo{
+    /* /* position: absolute; */
+    padding:20px;
+    width: 220.1px;
+    height: 113px;
+
+}
+
+.tagline{
+    width: 550px;
+    margin-left: 725px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    /* line-height: 28px; */
+
+    color: #000000;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    margin:49px 89px;
+
+}
+
+.key-image{
+    width: 390px;
+}
+
+
+
+.login-card{
+    padding: 36px;
+    margin-left: 224px;
+    width: 463px;
+    height: 285px;
+    background: #FFFFFF;
+/* Card Style */
+
+box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25), -4px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 15px;
+}
+
+.login-card h2{
+    font-family: Noto Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+}
+
+.login-card form .inputData{
+    width:100%;
+    border: 3px solid #263238;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.login-card form .inputData span{
+    background:black;
+    color:white;
+    /* font-weight: 500; */
+}
+.login-card form .inputData input{
+    border-radius: 10px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+color: #000000;
+}
+
+
